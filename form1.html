@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form action ="/server"method="get">
+
+    <fieldset>
+        <legend align="Center">Personal Information</legend>
+
+        Full Name:<br>
+        <input type="text" maxlength="30" placeholder="Enter your name" required><br><br>
+
+        Register Number:<br>
+        <input type="text" pattern="URK24CS[0-9]{3}" placeholder="URK24CS001" required><br><br>
+
+        Email:<br>
+        <input type="email" placeholder="abc@gmail.com" required><br><br>
+
+        Password:<br>
+        <input type="password" required><br><br>
+
+        Date of Birth:<br>
+        <input type="date" required><br><br>
+
+        Age:<br>
+        <input type="number" min="17" max="21" required><br><br>
+
+        Preferred Time:<br>
+        <input type="time"><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend align="Center">Academic Information</legend>
+
+        Department:<br>
+        <select required>
+            <option value="">Select Department</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+        </select>
+
+        <br><br>
+
+        Gender:<br>
+        <input type="radio" name="gender" required checked> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+
+        <br><br>
+
+        Skills:<br>
+        <input type="checkbox" checked> HTML
+        <input type="checkbox"> CSS
+        <input type="checkbox"> JavaScript
+        <input type="checkbox"> Python
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend align="Center">Additional Information</legend>
+
+        Resume:<br>
+        <input type="file"><br><br>
+
+        Portfolio:<br>
+        <input type="url" placeholder="https://example.com"><br><br>
+
+        Favorite Color:<br>
+        <input type="color">
+
+    </fieldset>
+
+    <br>
+
+    <input  align="Center" type="submit" value="Submit">
+    <input  align="Center" type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
